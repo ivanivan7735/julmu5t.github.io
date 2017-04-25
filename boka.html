@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta charset="utf-8">
+        <title>JulMu5T</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/mall.css">
+        <style>
+            body{
+                padding-top: 50px;
+            }
+        </style> 
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">JulMu5T  <span class="glyphicon glyphicon-globe"></span></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Start  <span class="glyphicon glyphicon-home"></span></a></li>
+                        <li class="active"><a href="boka.html">Boka <span class="glyphicon glyphicon-calendar"></span></a></li>
+                        <li><a href="hitta.html">Hitta <span class="glyphicon glyphicon-road"></span></a></li>
+                        <li><a href="spa.html">Spa <span class="glyphicon glyphicon-glass"></span></a></li>
+                        <li><a href="kontakt.html">Kontakt <span class="glyphicon glyphicon-earphone"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+
+        <!--<img class="img-responsive" src="Bilder/h1.v3.jpg" alt="gfd">
+</header> -->
+
+        <div id="myCarousel" class="slide carousel" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+
+            </ol> 
+
+            <!-- slider -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="Bilder/hotelrum_fredag2.jpg" alt="jn">
+                </div>
+
+                <div class="item">
+                    <img src="Bilder/Hotelrum3.jpg" alt=jhg>
+                </div> 
+
+                <div class="item">
+                    <img src="Bilder/hotelrum_frdeag3.jpg" alt=jhg>
+                </div> 
+            </div>
+
+
+            <!-- controls -->
+
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <br>
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="name">Namn:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" placeholder="Namn">
+                </div>
+            </div>
+
+          <!--  <form class="form-horizontal" role="form"> -->
+         <!--       <div class="form-group">
+                    <label class="control-label col-sm-4" for="name">Efternamn:</label>
+                    <div class="col-sm-6">
+                       <input type="text" class="form-control" id="name" placeholder="Efternamn">
+                    </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="number">Personnummer:</label>
+                    <div class="col-sm-6"> 
+                        <input type="text" class="form-control" id="number" placeholder="Personnummer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="email">Epostadress:</label>
+                    <div class="col-sm-6"> 
+                        <input type="text" class="form-control" id="email" placeholder="Epost">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="rooms">Antal rum:</label>
+                    <div class="col-sm-6"> 
+                        <select class="form-control" id="rooms">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option> 
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="rooms">Personer per rum:</label>
+                    <div class="col-sm-6"> 
+                        <select class="form-control" id="persons">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group"> 
+                    <div class="col-sm-offset-4 col-sm-6">
+                        <button type="submit" class="btn btn-default">Skicka</button>
+                    </div>
+                </div>
+            </form>
+
+
+            <footer class="navbar-fixed-bottom text-center">
+                <div id="fot">
+                    <p>JulMu5T Hotell Service.</p>
+                </div>
+            </footer>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+            <script src="js/bootstrap.min.js"></script>
+
+            </body>
+
+
+
+
+        </html>
